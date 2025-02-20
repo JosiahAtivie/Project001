@@ -16,7 +16,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="about.html">Rooms</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,58 +31,136 @@
             <a href="#rooms" class="btn">Explore Rooms</a>
         </div>
     </section>
+    <section class="image-group">
+        <div class="category">
+            <h3>Reception</h3>
+            <div class="image-row">
+                <img src="kitchen1.jpg" alt="Kitchen 1">
+                <img src="kitchen2.jpg" alt="Kitchen 2">
+                <img src="kitchen3.jpg" alt="Kitchen 3">
+                <img src="kitchen4.jpg" alt="Kitchen 4">
+            </div>
+        </div>
 
+        <div class="category">
+            <h3>Rooms</h3>
+            <div class="image-row">
+                <img src="room1.jpg" alt="Room 1">
+                <img src="room2.jpg" alt="Room 2">
+                <img src="room3.jpg" alt="Room 3">
+                <img src="room4.jpg" alt="Room 4">
+            </div>
+        </div>
 
-    <section class="gallery">
-        <div class="gallery-container">
-            <img src="hotel.pic.01.jpg" alt="Hotel Image 1">
-            <img src="hotel.pic.02.jpg" alt="Hotel Image 2">
-            <img src="hotel.pic.03.jpg" alt="Hotel Image 3">
-            <img src="hotel.pic.04.jpg" alt="Hotel Image 4">
-            <img src="hotel.pic.05.jpg" alt="Hotel Image 5">
+        <div class="category">
+            <h3>Event hall</h3>
+            <div class="image-row">
+                <img src="reception1.jpg" alt="Reception 1">
+                <img src="reception2.jpg" alt="Reception 2">
+                <img src="reception3.jpg" alt="Reception 3">
+                <img src="reception4.jpg" alt="Reception 4">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Bars & Lounge</h3>
+            <div class="image-row">
+                <img src="bar1.jpg" alt="Bar 1">
+                <img src="bar2.jpg" alt="Bar 2">
+                <img src="bar3.jpg" alt="Bar 3">
+                <img src="bar4.jpg" alt="Bar 4">
+            </div>
         </div>
     </section>
 
-    <section class="check-in">
-        <div class="check-in-box">
+
+
+    <section class="checkin-container">
+        <!-- Check-in Form -->
+        <div class="checkin-box">
             <h2>Hotel Check-In</h2>
             <form>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
 
-                <label for="check-in-date">Check-In Date</label>
-                <input type="date" id="check-in-date" name="check-in-date" required>
+                <label for="checkin">Check-In Date:</label>
+                <input type="date" id="checkin" required>
 
-                <label for="check-out-date">Check-Out Date</label>
-                <input type="date" id="check-out-date" name="check-out-date" required>
+                <label for="checkout">Check-Out Date:</label>
+                <input type="date" id="checkout" required>
 
-                <label for="room-type">Room Type</label>
-                <select id="room-type" name="room-type" required>
+                <label for="room">Room Type:</label>
+                <select id="room">
                     <option value="single">Single Room</option>
                     <option value="double">Double Room</option>
                     <option value="suite">Suite</option>
                 </select>
 
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit">Check In</button>
             </form>
+        </div>
+
+        <!-- Side Content (Image & Text) -->
+        <div class="side-content">
+            <h2>Welcome to Ochuko Hotels</h2>
+            <p>Experience luxury and comfort in the heart of the city. Enjoy premium rooms, fine dining, and top-notch
+                hospitality.</p>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 OCHUKO HOTELS AND SUITS. All Rights Reserved.</p>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About the Hotel -->
+            <div class="footer-section about">
+                <h2>About Ochuko Hotels</h2>
+                <p>Experience luxury, comfort, and top-notch hospitality at Ochuko Hotels and Suites. We offer premium
+                    rooms, fine dining, and excellent customer service.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Ochuko Street, Benin City, Nigeria</p>
+                <p><i class="fas fa-phone"></i> +234 812 393 8615</p>
+                <p><i class="fas fa-envelope"></i> info@ochukohotels.com</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms & Suites</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ochuko Hotels and Suites | Designed by Josiah Ativie</p>
+        </div>
     </footer>
 
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCHUKO HOTELS AND SUITS</title>
+    <link rel="stylesheet" href="hotel.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">OCHUKO HOTELS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to OCHUKO HOTELS AND SUITS</h1>
+            <p>Experience Luxury & Comfort</p>
+            <a href="#rooms" class="btn">Explore Rooms</a>
+        </div>
+    </section>
+
+
+    <section class="gallery">
+        <div class="gallery-container">
+            <img src="hotel.pic.01.jpg" alt="Hotel Image 1">
+            <img src="hotel.pic.02.jpg" alt="Hotel Image 2">
+            <img src="hotel.pic.03.jpg" alt="Hotel Image 3">
+            <img src="hotel.pic.04.jpg" alt="Hotel Image 4">
+            <img src="hotel.pic.05.jpg" alt="Hotel Image 5">
+        </div>
+    </section>
+
+    <section class="check-in">
+        <div class="check-in-box">
+            <h2>Hotel Check-In</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="check-in-date">Check-In Date</label>
+                <input type="date" id="check-in-date" name="check-in-date" required>
+
+                <label for="check-out-date">Check-Out Date</label>
+                <input type="date" id="check-out-date" name="check-out-date" required>
+
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 OCHUKO HOTELS AND SUITS. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
